@@ -20,7 +20,7 @@
 
 ### 如何启动
 
-- 修改app目录下的authorization文件
+1. 修改app目录下的authorization文件
 
 ```
 api_key='你的key'
@@ -31,28 +31,60 @@ api_secret='你的secret'
 
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
 
-- 修改data/data.json配置文件
+2. 修改data/data.json配置文件
 ```
 {
     "runBet": {
-        "next_buy_price": 250,      <- 下次开仓价
+        "next_buy_price": 350,      <- 下次开仓价
          
         "grid_sell_price": 375      <- 当前止盈价
     },
     "config": {
-        "profit_ratio": 5,         <- 网格止盈比率
+        "profit_ratio": 5,         <- 止盈比率
         "double_throw_ratio": 5,   <- 补仓比率
         "cointype": "ETHUSDT",     <- 交易对
         "quantity": 1              <- 交易数量
     }
 }
 ```
-- 运行主文件
+3. 运行主文件
 ```
 python eth-run.py
 
 # python eth-run-msg.py 这是带有钉钉通知的主文件
 ```
+### 举例：
+假如现在ETH/USDT的价格为370，当行情价下跌为350。则执行买入(以370挂买单)。那么data.json文件修改为
+```
+{
+    "runBet": {
+        "next_buy_price": 332.5,      <- 下次开仓价
+         
+        "grid_sell_price": 367.5      <- 当前止盈价
+    },
+    "config": {
+        "profit_ratio": 5,         
+        "double_throw_ratio": 5,  
+        "cointype": "ETHUSDT",     
+        "quantity": 1              
+    }
+}
+```
+当行情价回升为368。则执行买入(以367.5挂卖单)。那么data.json文件修改为
+{
+    "runBet": {
+        "next_buy_price": 349.125,      <- 下次开仓价
+         
+        "grid_sell_price": 385.875      <- 当前止盈价
+    },
+    "config": {
+        "profit_ratio": 5,         
+        "double_throw_ratio": 5,  
+        "cointype": "ETHUSDT",     
+        "quantity": 1              
+    }
+}
+
 ### 网格交易策略
 将资金划分为多份，找到一个基准线。当行情低于基准线一定比率后，执行买入操作。当行情价回升到一定比率，在执行卖出操作。
 
