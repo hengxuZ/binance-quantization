@@ -1,7 +1,7 @@
 {
     "runBet": {
-        "next_buy_price": 300,
-        "grid_sell_price": 400
+        "next_buy_price": 350,
+        "grid_sell_price": 375
     },
     "config": {
         "profit_ratio": 5,
