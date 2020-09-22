@@ -19,7 +19,7 @@ class BinanceAPI(object):
 
     def ping(self):
         path = "%s/ping" % self.BASE_URL_V3
-        return requests.get(path, timeout=30, verify=True).json()
+        return requests.get(path, timeout=180, verify=True).json()
 
     def get_ticker_price(self,market):
         path = "%s/ticker/price" % self.BASE_URL_V3
@@ -64,7 +64,7 @@ class BinanceAPI(object):
     def _get_no_sign(self, path, params={}):
         query = urlencode(params)
         url = "%s?%s" % (path, query)
-        return requests.get(url, timeout=30, verify=True).json()
+        return requests.get(url, timeout=180, verify=True).json()
 
     def _sign(self, params={}):
         data = params.copy()
@@ -84,7 +84,7 @@ class BinanceAPI(object):
         url = "%s" % (path)
         header = {"X-MBX-APIKEY": self.key}
         return requests.post(url, headers=header, data=query, \
-            timeout=30, verify=True).json()
+            timeout=180, verify=True).json()
 
     def _format(self, price):
         return "{:.8f}".format(price)

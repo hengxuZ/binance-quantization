@@ -23,7 +23,6 @@ def loop_fun():
             time.sleep(60*3)
         else:
             print("当前市价：{market_price}。未能满足交易,继续运行".format(market_price = binan.get_ticker_price(runbet.get_cointype())))
-            time.sleep(1)
 
 
 if __name__ == "__main__":
