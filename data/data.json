@@ -1,12 +1,12 @@
 {
     "runBet": {
-        "next_buy_price": 8.57,
-        "grid_sell_price": 9.47
+        "next_buy_price": 330,
+        "grid_sell_price": 400
     },
     "config": {
         "profit_ratio": 5,
         "double_throw_ratio": 5,
-        "cointype": "LINKUSDT",
-        "quantity": 30
+        "cointype": "ETHUSDT",
+        "quantity": 1
     }
 }
