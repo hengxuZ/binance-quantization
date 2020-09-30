@@ -1,8 +1,8 @@
 import os,json
 # linux
-data_path = os.getcwd()+"/data/data.json"
+# data_path = os.getcwd()+"/data/data.json"
 # windows
-# data_path = os.getcwd() + "\data\data.json"
+data_path = os.getcwd() + "\data\data.json"
 
 class RunBetData:
 
@@ -45,8 +45,8 @@ class RunBetData:
     def modify_price(self, deal_price):
         print("交易成功，开始修改补仓价和网格价")
         data_json = self._get_json_data()
-        data_json["runBet"]["next_buy_price"] = round(deal_price * (1 - data_json["config"]["double_throw_ratio"] / 100), 2)
-        data_json["runBet"]["grid_sell_price"] = round(deal_price * (1 + data_json["config"]["profit_ratio"] / 100), 2)
+        data_json["runBet"]["next_buy_price"] = round(deal_price * (1 - data_json["config"]["double_throw_ratio"] / 100), 4)
+        data_json["runBet"]["grid_sell_price"] = round(deal_price * (1 + data_json["config"]["profit_ratio"] / 100), 4)
 
         self._modify_json_data(data_json)
         print("修改后的补仓价格为:{double}。修改后的网格价格为:{grid}".format(double=data_json["runBet"]["next_buy_price"],
@@ -55,4 +55,4 @@ class RunBetData:
 
 if __name__ == "__main__":
     instance = RunBetData()
-    print(instance.modify_price(10.8))
+    print(instance.modify_price(0.10245))

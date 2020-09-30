@@ -1,12 +1,12 @@
 {
     "runBet": {
-        "next_buy_price": 330,
-        "grid_sell_price": 400
+        "next_buy_price": 27.17,
+        "grid_sell_price": 30.03
     },
     "config": {
         "profit_ratio": 5,
         "double_throw_ratio": 5,
-        "cointype": "ETHUSDT",
+        "cointype": "BNBUSDT",
         "quantity": 1
     }
 }
