@@ -14,13 +14,16 @@ def loop_fun():
     while True:
         if runbet.get_buy_price() >= binan.get_ticker_price(runbet.get_cointype()):
             order_id = msg.buy_limit_msg(runbet.get_cointype(),runbet.get_quantity(),runbet.get_buy_price())
-            runbet.modify_price(runbet.get_buy_price())
-            time.sleep(60*3) # 挂单后，停止运行3分钟
+            if order_id['orderId']:
+                runbet.modify_price(runbet.get_buy_price(),runbet.get_step()+1)
+                time.sleep(60*3) # 挂单后，停止运行3分钟
 
         elif runbet.get_sell_price() < binan.get_ticker_price(runbet.get_cointype()):
+
             order_id = msg.sell_limit_msg(runbet.get_cointype(),runbet.get_quantity(), runbet.get_sell_price())
-            runbet.modify_price(runbet.get_sell_price())
-            time.sleep(60*3)
+            if order_id['orderId']:
+                runbet.modify_price(runbet.get_sell_price(),runbet.get_step()-1)
+                time.sleep(60*3)
         else:
             print("当前市价：{market_price}。未能满足交易,继续运行".format(market_price = binan.get_ticker_price(runbet.get_cointype())))
 

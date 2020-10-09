@@ -9,16 +9,27 @@ from app.BinanceAPI import BinanceAPI
 class Message:
 
     def buy_limit_msg(self,market, quantity, rate):
-        res = BinanceAPI(api_key,api_secret).buy_limit(market, quantity, rate)
-        buy_info = "报警：币种为：{cointype}。买单价为：{price}。买单量为：{num}".format(cointype=market,price=rate,num=quantity)
-        self.dingding_warn(buy_info)
-        return res
+        try:
+            res = BinanceAPI(api_key,api_secret).buy_limit(market, quantity, rate)
+            if res['orderId']:
+                buy_info = "报警：币种为：{cointype}。买单价为：{price}。买单量为：{num}".format(cointype=market,price=rate,num=quantity)
+                self.dingding_warn(buy_info)
+                return res
+        except BaseException as e:
+            error_info = "报警：币种为：{cointype},买单失败".format(cointype=market)
+            self.dingding_warn(error_info)
+
 
     def sell_limit_msg(self,market, quantity, rate):
-        res = BinanceAPI(api_key,api_secret).sell_limit(market, quantity, rate)
-        buy_info = "报警：币种为：{cointype}。卖单价为：{price}。卖单量为：{num}".format(cointype=market,price=rate,num=quantity)
-        self.dingding_warn(buy_info)
-        return res
+        try:
+            res = BinanceAPI(api_key,api_secret).sell_limit(market, quantity, rate)
+            if res['orderId']:
+                buy_info = "报警：币种为：{cointype}。卖单价为：{price}。卖单量为：{num}".format(cointype=market,price=rate,num=quantity)
+                self.dingding_warn(buy_info)
+                return res
+        except BaseException as e:
+            error_info = "报警：币种为：{cointype},卖单失败".format(cointype=market)
+            self.dingding_warn(error_info)
 
     def dingding_warn(self,text):
         headers = {'Content-Type': 'application/json;charset=utf-8'}
@@ -43,4 +54,4 @@ class Message:
 
 if __name__ == "__main__":
     msg = Message()
-    print(msg.buy_limit_msg("EOSUSDT",10,2))
+    print(msg.sell_limit_msg("EOSUSDT",1,4))

@@ -25,6 +25,7 @@ class BinanceAPI(object):
         path = "%s/ticker/price" % self.BASE_URL_V3
         params = {"symbol":market}
         res =  self._get_no_sign(path,params)
+        time.sleep(2)
         return float(res['price'])
 
     def buy_limit(self, market, quantity, rate):
@@ -91,4 +92,4 @@ class BinanceAPI(object):
 
 if __name__ == "__main__":
     instance = BinanceAPI(api_key,api_secret)
-    print(instance.get_ticker_price("BNBUSDT"))
+    print(instance.buy_limit("EOSUSDT",2,2))

@@ -1,12 +1,18 @@
 {
     "runBet": {
-        "next_buy_price": 27.17,
-        "grid_sell_price": 30.03
+        "next_buy_price": 8.91,
+        "grid_sell_price": 10.05,
+        "step": 2
     },
     "config": {
-        "profit_ratio": 5,
-        "double_throw_ratio": 5,
-        "cointype": "BNBUSDT",
-        "quantity": 1
+        "profit_ratio": 6,
+        "double_throw_ratio": 6,
+        "cointype": "LINKUSDT",
+        "quantity": [
+            30,
+            30,
+            45,
+            60
+        ]
     }
 }
