@@ -51,52 +51,21 @@ api_secret='你的secret'
 ```
 python eth-run.py
 
-# python eth-run-msg.py 这是带有钉钉通知的主文件
-```
-### 举例：
-假如现在ETH/USDT的价格为370，当行情价下跌为350。则执行买入(以350挂买单)。那么data.json文件修改为
-```
-{
-    "runBet": {
-        "next_buy_price": 332.5,      <- 下次开仓价
-         
-        "grid_sell_price": 367.5      <- 当前止盈价
-    },
-    "config": {
-        "profit_ratio": 5,         
-        "double_throw_ratio": 5,  
-        "cointype": "ETHUSDT",     
-        "quantity": 1              
-    }
-}
+# python eth-run-msg.py 这是带有钉钉通知的主文件(推荐使用钉钉模式启动👍)
 ```
 
-当行情价回升为368。则执行买入(以367.5挂卖单)。那么data.json文件修改为
-```
-{
-    "runBet": {
-        "next_buy_price": 349.125,      <- 下次开仓价
-         
-        "grid_sell_price": 385.875      <- 当前止盈价
-    },
-    "config": {
-        "profit_ratio": 5,         
-        "double_throw_ratio": 5,  
-        "cointype": "ETHUSDT",     
-        "quantity": 1              
-    }
-}
-```
 ### 钉钉预警
 
 如果您想使用钉钉通知，那么你需要创建一个钉钉群，然后加入自定义机器人。最后将机器人的token粘贴到authorization文件中的dingding_token
+关键词输入：报警
 
+#### 钉钉通知交易截图
 
-### 网格交易策略
-将资金划分为多份，找到一个基准线。当行情低于基准线一定比率后，执行买入操作。当行情价回升到一定比率，在执行卖出操作。
+![钉钉交易信息](https://s1.ax1x.com/2020/10/10/0ytKdH.md.jpg)
 
 ### 待办事项
 - [ ] 支持不同仓位倍投数量不同
+- [ ] 交易结果汇总,计算总收益值
 
 ### 免责申明
 本项目不构成投资建议，投资者应独立决策并自行承担风险
@@ -108,4 +77,4 @@ python eth-run.py
 
 运行项目使用的是腾讯云的海外服务器
 
-> 风险提示：防范以“虚拟货币”“区块链”名义进行非法集资的风险。
+> 🚫风险提示：防范以“虚拟货币”“区块链”名义进行非法集资的风险。
