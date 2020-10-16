@@ -1,8 +1,8 @@
 import os,json
 # linux
-# data_path = os.getcwd()+"/data/data.json"
+data_path = os.getcwd()+"/data/data.json"
 # windows
-data_path = os.getcwd() + "\data.json"
+# data_path = os.getcwd() + "\data\data.json"
 
 class RunBetData:
 
