@@ -21,6 +21,13 @@ class Message:
 
 
     def sell_limit_msg(self,market, quantity, rate):
+        '''
+
+        :param market:
+        :param quantity: 数量
+        :param rate: 价格
+        :return:
+        '''
         try:
             res = BinanceAPI(api_key,api_secret).sell_limit(market, quantity, rate)
             if res['orderId']:
@@ -29,7 +36,8 @@ class Message:
                 return res
         except BaseException as e:
             error_info = "报警：币种为：{cointype},卖单失败".format(cointype=market)
-            self.dingding_warn(error_info)
+            self.dingding_warn(error_info+str(res))
+            return res
 
     def dingding_warn(self,text):
         headers = {'Content-Type': 'application/json;charset=utf-8'}
@@ -54,4 +62,4 @@ class Message:
 
 if __name__ == "__main__":
     msg = Message()
-    print(msg.sell_limit_msg("EOSUSDT",1,4))
+    print(msg.sell_limit_msg("EOSUSDT",2,5))

@@ -16,7 +16,7 @@ def loop_fun():
             order_id = msg.buy_limit_msg(runbet.get_cointype(),runbet.get_quantity(),runbet.get_buy_price())
             if order_id['orderId']:
                 runbet.modify_price(runbet.get_buy_price(),runbet.get_step()+1)
-                time.sleep(60) # 挂单后，停止运行3分钟
+                time.sleep(60) # 挂单后，停止运行1分钟
 
         elif runbet.get_sell_price() < binan.get_ticker_price(runbet.get_cointype()):
 

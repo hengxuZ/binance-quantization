@@ -1,8 +1,8 @@
 import os,json
 # linux
-data_path = os.getcwd()+"/data/data.json"
+# data_path = os.getcwd()+"/data/data.json"
 # windows
-# data_path = os.getcwd() + "\data\data.json"
+data_path = os.getcwd() + "\data.json"
 
 class RunBetData:
 
@@ -43,7 +43,7 @@ class RunBetData:
         quantity_arr = data_json["config"]["quantity"]
         quantity = None
         if cur_step <= len(quantity_arr):
-            quantity = quantity_arr[cur_step-1]
+            quantity = quantity_arr[0] if cur_step == 0 else quantity_arr[cur_step-1]
         else:
             quantity = quantity_arr[-1]
         return quantity
