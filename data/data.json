@@ -1,13 +1,13 @@
 {
     "runBet": {
-        "next_buy_price": 4.9,
-        "grid_sell_price": 6,
-        "step": 0
+        "next_buy_price": 9.2179,
+        "grid_sell_price": 10.2941,
+        "step": 4
     },
     "config": {
         "profit_ratio": 5,
         "double_throw_ratio": 5,
-        "cointype": "ATOMUSDT",
-        "quantity": [25,25,50]
+        "cointype": "WINGUSDT",
+        "quantity": [10,10,10,5,5]
     }
 }
