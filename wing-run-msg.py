@@ -33,8 +33,8 @@ def loop_fun():
 
 
 if __name__ == "__main__":
-    #try:
-    loop_fun()
-    #except Exception as e:
-        #error_info = "报警：" + str(e)
-        #msg.dingding_warn(error_info)
+    try:
+        loop_fun()
+    except Exception as e:
+        error_info = "报警：" + str(e)
+        msg.dingding_warn(error_info)
