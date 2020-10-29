@@ -8,6 +8,6 @@
         "profit_ratio": 5,
         "double_throw_ratio": 5,
         "cointype": "WINGUSDT",
-        "quantity": [10,10,10,5,5]
+        "quantity": [10,10,10,10]
     }
 }

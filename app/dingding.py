@@ -16,7 +16,7 @@ class Message:
                 self.dingding_warn(buy_info)
                 return res
         except BaseException as e:
-            error_info = "报警：币种为：{cointype},买单失败".format(cointype=market)
+            error_info = "报警：币种为：{cointype},买单失败.api返回内容为:{reject}".format(cointype=market,reject=res['msg'])
             self.dingding_warn(error_info)
 
 
@@ -35,7 +35,7 @@ class Message:
                 self.dingding_warn(buy_info)
                 return res
         except BaseException as e:
-            error_info = "报警：币种为：{cointype},卖单失败".format(cointype=market)
+            error_info = "报警：币种为：{cointype},卖单失败.api返回内容为:{reject}".format(cointype=market,reject=res['msg'])
             self.dingding_warn(error_info+str(res))
             return res
 
@@ -62,4 +62,4 @@ class Message:
 
 if __name__ == "__main__":
     msg = Message()
-    print(msg.sell_limit_msg("EOSUSDT",2,5))
+    print(msg.buy_limit_msg("EOSUSDT",4,2))

@@ -15,11 +15,11 @@ def loop_fun():
         if runbet.get_buy_price() >= binan.get_ticker_price(runbet.get_cointype()):
             try:
                 res = msg.buy_limit_msg(runbet.get_cointype(),runbet.get_quantity(),runbet.get_buy_price())
-                if res['orderId']:
+                if res['orderId']: #挂单成功
                     runbet.modify_price(runbet.get_buy_price(),runbet.get_step()+1)
                     time.sleep(60) # 挂单后，停止运行1分钟
             except:
-                msg.dingding_warn('没有买入成功响应结果:'+str(res))
+                msg.dingding_warn('没有买入成功响应结果:{reject}'.format(reject=res['msg']))
         elif runbet.get_sell_price() < binan.get_ticker_price(runbet.get_cointype()):
             try:
                 res = msg.sell_limit_msg(runbet.get_cointype(),runbet.get_quantity(), runbet.get_sell_price())
@@ -27,7 +27,7 @@ def loop_fun():
                     runbet.modify_price(runbet.get_sell_price(),runbet.get_step()-1)
                     time.sleep(60)
             except:
-                msg.dingding_warn('没有买入成功响应结果:'+str(res))
+                msg.dingding_warn('没有买入成功响应结果:{reject}'.format(reject=res['msg']))
         else:
             print("当前市价：{market_price}。未能满足交易,继续运行".format(market_price = binan.get_ticker_price(runbet.get_cointype())))
 
@@ -36,5 +36,5 @@ if __name__ == "__main__":
     try:
         loop_fun()
     except Exception as e:
-        error_info = "报警：" + str(e)
+        error_info = "报警：服务停止"
         msg.dingding_warn(error_info)
