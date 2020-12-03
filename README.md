@@ -67,8 +67,8 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 #### 钉钉通知交易截图
 
 ![钉钉交易信息](https://s1.ax1x.com/2020/10/10/0ytKdH.md.jpg)
-#### 近日收益
-![收益图](https://s1.ax1x.com/2020/10/10/0ya4Yj.md.png)
+#### 26日实战收益
+![收益图](https://s3.ax1x.com/2020/12/03/DTxkin.png)
 
 ### 待办事项
 - [ ] 支持不同仓位倍投数量不同
