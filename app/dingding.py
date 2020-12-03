@@ -22,7 +22,6 @@ class Message:
 
     def sell_limit_msg(self,market, quantity, rate):
         '''
-
         :param market:
         :param quantity: 数量
         :param rate: 价格

@@ -1,13 +1,13 @@
 {
     "runBet": {
-        "next_buy_price": 9.2179,
-        "grid_sell_price": 10.2941,
-        "step": 4
+        "next_buy_price": 568.1,
+        "grid_sell_price": 627.9,
+        "step": 0
     },
     "config": {
-        "profit_ratio": 5,
+        "profit_ratio": 6,
         "double_throw_ratio": 5,
-        "cointype": "WINGUSDT",
-        "quantity": [10,10,10,10]
+        "cointype": "ETHUSDT",
+        "quantity": [0.25,0.3,0.35,0.4,0.45,0.5]
     }
 }
