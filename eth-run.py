@@ -24,7 +24,7 @@ class Run_Main():
             step = runbet.get_step() # 当前步数
 
             if grid_buy_price >= cur_market_price:   # 是否满足买入价
-                res = msg.buy_limit_msg(runbet.get_cointype(), quantity, grid_buy_price)
+                res = msg.buy_limit_msg(self.coinType, quantity, grid_buy_price)
                 if res['orderId']: # 挂单成功
                     runbet.modify_price(grid_buy_price, step+1) #修改data.json中价格、当前步数
                     time.sleep(60*2) # 挂单后，停止运行1分钟
@@ -35,7 +35,7 @@ class Run_Main():
                 if step==0: # setp=0 防止踏空，跟随价格上涨
                     runbet.modify_price(grid_sell_prie,step)
                 else:
-                    res = msg.sell_limit_msg(runbet.get_cointype(), quantity, grid_sell_prie)
+                    res = msg.sell_limit_msg(self.coinType, runbet.get_quantity(False), grid_sell_prie)
                     if res['orderId']:
                         runbet.modify_price(grid_sell_prie, step - 1)
                         time.sleep(60*2)  # 挂单后，停止运行1分钟
