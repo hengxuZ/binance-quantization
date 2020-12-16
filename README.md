@@ -76,6 +76,7 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 - [ ] 支持均值回归策略,三角套利
 
 ### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
+![群聊交友群](https://s3.ax1x.com/2020/12/16/rlrZNj.jpg)
 ![wechat-QRcode](https://s3.ax1x.com/2020/11/14/DPSYss.jpg)
 麻烦备注来自github
 
