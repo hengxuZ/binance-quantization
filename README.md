@@ -79,6 +79,8 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 ![交流群](https://s3.ax1x.com/2020/12/16/rlrZNj.jpg)
 ![wechat-QRcode](https://s3.ax1x.com/2020/11/14/DPSYss.jpg)
 ![币圈快讯爬取群](https://s3.ax1x.com/2020/12/28/roOVET.png)
+wx号：findpanpan
+麻烦备注来自github
 麻烦备注来自github
 
 ### 免责申明
