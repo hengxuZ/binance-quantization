@@ -82,7 +82,7 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 wx号：findpanpan
 麻烦备注来自github
 ### 钉钉设置教程
-![suMVIK.png](https://s3.ax1x.com/2021/01/08/suMVIK.png)
+![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
 ### 免责申明
 本项目不构成投资建议，投资者应独立决策并自行承担风险
