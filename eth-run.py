@@ -15,7 +15,7 @@ class Run_Main():
         pass
 
 
-    def loop_fun(self):
+    def loop_run(self):
         while True:
             cur_market_price = binan.get_ticker_price(runbet.get_cointype()) # 当前交易对市价
             grid_buy_price = runbet.get_buy_price()  # 当前网格买入价格
@@ -48,8 +48,12 @@ class Run_Main():
 if __name__ == "__main__":
     instance = Run_Main()
     try:
-        instance.loop_fun()
+        instance.loop_run()
     except Exception as e:
         error_info = "报警：币种{coin},服务停止".format(coin=instance.coinType)
         msg.dingding_warn(error_info)
-    # loop_fun()
+
+# 调试看报错运行下面，正式运行用上面       
+# if __name__ == "__main__":       
+    # instance = Run_Main()    
+    # instance.loop_run()
