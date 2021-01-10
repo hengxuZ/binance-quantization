@@ -54,7 +54,11 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 }
 
 ```
-3. 运行主文件
+3. 安装依赖包
+'''
+pip install request time json 
+'''
+4. 运行主文件
 ```
 # python eth-run.py 这是带有钉钉通知的主文件(推荐使用钉钉模式启动👍)
 ```
