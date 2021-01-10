@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from app.BinanceAPI import BinanceAPI
 from app.authorization import api_key,api_secret
 from data.runBetData import RunBetData
