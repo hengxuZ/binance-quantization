@@ -20,7 +20,7 @@ class Run_Main():
         while True:
             cur_market_price = binan.get_ticker_price(runbet.get_cointype()) # 当前交易对市价
             grid_buy_price = runbet.get_buy_price()  # 当前网格买入价格
-            grid_sell_prie = runbet.get_sell_price() # 当前网格卖出价格
+            grid_sell_price = runbet.get_sell_price() # 当前网格卖出价格
             quantity = runbet.get_quantity()   # 买入量
             step = runbet.get_step() # 当前步数
 
@@ -32,13 +32,13 @@ class Run_Main():
                 else:
                     break
 
-            elif grid_sell_prie < cur_market_price:  # 是否满足卖出价
+            elif grid_sell_price < cur_market_price:  # 是否满足卖出价
                 if step==0: # setp=0 防止踏空，跟随价格上涨
-                    runbet.modify_price(grid_sell_prie,step)
+                    runbet.modify_price(grid_sell_price,step)
                 else:
-                    res = msg.sell_limit_msg(self.coinType, runbet.get_quantity(False), grid_sell_prie)
+                    res = msg.sell_limit_msg(self.coinType, runbet.get_quantity(False), grid_sell_price)
                     if res['orderId']:
-                        runbet.modify_price(grid_sell_prie, step - 1)
+                        runbet.modify_price(grid_sell_price, step - 1)
                         time.sleep(60*2)  # 挂单后，停止运行1分钟
                     else:
                         break
