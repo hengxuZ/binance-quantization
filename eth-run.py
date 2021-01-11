@@ -33,15 +33,15 @@ class Run_Main():
                     break
 
             elif grid_sell_prie < cur_market_price:  # 是否满足卖出价
-                if step==0: # setp=0 防止踏空，跟随价格上涨
-                    runbet.modify_price(grid_sell_prie,step)
+                # if step==0: # setp=0 防止踏空，跟随价格上涨
+                #     runbet.modify_price(grid_sell_prie,step)
+                # else:
+                res = msg.sell_limit_msg(self.coinType, runbet.get_quantity(False), grid_sell_prie)
+                if res['orderId']:
+                    runbet.modify_price(grid_sell_prie, step - 1)
+                    time.sleep(60*2)  # 挂单后，停止运行1分钟
                 else:
-                    res = msg.sell_limit_msg(self.coinType, runbet.get_quantity(False), grid_sell_prie)
-                    if res['orderId']:
-                        runbet.modify_price(grid_sell_prie, step - 1)
-                        time.sleep(60*2)  # 挂单后，停止运行1分钟
-                    else:
-                        break
+                    break
             else:
                 print("当前市价：{market_price}。未能满足交易,继续运行".format(market_price = cur_market_price))
 
