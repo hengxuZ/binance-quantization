@@ -1,5 +1,5 @@
 # Get an Key and Secret
-# https://www.binance.com/restapipub.html
+# author-wechat：findpanpan
 
 api_key = ''
 api_secret = ''

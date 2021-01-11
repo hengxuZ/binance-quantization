@@ -1,5 +1,7 @@
-# -*- coding: utf-8 -*
+# author-wechat：findpanpan
+
 import requests, time, hmac, hashlib
+# from app.authorization import recv_window,api_secret,api_key
 from app.authorization import recv_window,api_secret,api_key
 
 try:
@@ -10,6 +12,7 @@ except ImportError:
 
 class BinanceAPI(object):
     BASE_URL = "https://www.binance.com/api/v1"
+    FUTURE_URL = "https://fapi.binance.com"
     BASE_URL_V3 = "https://api.binance.com/api/v3"
     PUBLIC_URL = "https://www.binance.com/exchange/public/product"
 
@@ -51,6 +54,29 @@ class BinanceAPI(object):
     def sell_limit(self, market, quantity, rate):
         path = "%s/order" % self.BASE_URL_V3
         params = self._order(market, quantity, "SELL", rate)
+        return self._post(path, params)
+
+    ### --- 合约 --- ###
+    def set_leverage(self,symbol, leverage):
+        
+        ''' 调整开仓杠杆
+            :param symbol 交易对
+            :param leverage 杠杆倍数
+        '''
+        path = "%s/fapi/v1/leverage" % self.BASE_URL
+        params = {'symbol':symbol, 'leverage': leverage}
+        return self._post(path, params)
+    
+    def limit_future_order(self,side, market, quantity, price):
+        
+        ''' 合约限价单
+            :param side: 做多or做空 BUY SELL
+            :param market:币种类型。如：BTCUSDT、ETHUSDT
+            :param quantity: 购买量
+            :param price: 开仓价格
+        '''
+        path = "%s/fapi/v1/order" % self.FUTURE_URL
+        params = self._order(market, quantity, side, price)
         return self._post(path, params)
 
     ### ----私有函数---- ###
@@ -96,11 +122,10 @@ class BinanceAPI(object):
 
     def _post(self, path, params={}):
         params.update({"recvWindow": recv_window})
-        query = urlencode(self._sign(params))
+        query = self._sign(params)
         url = "%s" % (path)
         header = {"X-MBX-APIKEY": self.key}
-        return requests.post(url, headers=header, data=query, \
-            timeout=180, verify=True).json()
+        return requests.post(url, headers=header, data=query,timeout=180, verify=True).json()
 
     def _format(self, price):
         return "{:.8f}".format(price)
@@ -109,4 +134,4 @@ if __name__ == "__main__":
     instance = BinanceAPI(api_key,api_secret)
     # print(instance.buy_limit("EOSUSDT",5,2))
     # print(instance.get_ticker_price("WINGUSDT"))
-    print(instance.get_ticker_24hour("WINGUSDT"))
+    print(instance.limit_future_order("SELL", "EOSUSDT", 2, 3))
