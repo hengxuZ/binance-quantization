@@ -1,7 +1,7 @@
 # 数字货币量化交易-网格策略
 重大喜讯第二版本它来了！！真正的网格套利！！
 ### 🎉第二版本🎉 （现货做多 期货做空）
-点击➡ 查看使用规则(更新中)
+点击➡ 查看[使用规则](https://github.com/hengxuZ/binance-quantization/tree/master/dev-ReadMe.md)
 
 如果您没有使用过项目，请忽略掉上面第二版介绍
 
