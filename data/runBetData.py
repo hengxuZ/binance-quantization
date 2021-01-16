@@ -74,12 +74,24 @@ class RunBetData:
         return quantity
 
     def get_spot_step(self):
+        '''获取现货仓位数'''
         data_json = self._get_json_data()
         return data_json['runBet']['spot_step']
 
     def get_future_step(self):
+        '''获取期货仓位数'''
         data_json = self._get_json_data()
-        return data_json['runBet']['future_step']    
+        return data_json['runBet']['future_step']  
+     
+    def get_profit_ratio(self):
+        '''获取补仓比率'''
+        data_json = self._get_json_data()
+        return data_json['config']['profit_ratio']  
+    
+    def get_double_throw_ratio(self):
+        '''获取止盈比率'''
+        data_json = self._get_json_data()
+        return data_json['config']['double_throw_ratio']          
 
     # 买入后，修改 补仓价格 和 网格平仓价格以及步数
     def modify_price(self, deal_price):

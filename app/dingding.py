@@ -30,7 +30,7 @@ class Message:
             self.dingding_warn(error_info)
 
 
-    def sell_limit_msg(self,market, quantity, rate):
+    def sell_limit_msg(self,market, quantity, rate, profit_usdt=0):
         '''
         现货卖出带有钉钉消息的封装
         :param market:
@@ -41,7 +41,7 @@ class Message:
         try:
             res = BinanceAPI(api_key,api_secret).sell_limit(market, quantity, rate)
             if res['orderId']:
-                buy_info = "报警：币种为：{cointype}。卖单价为：{price}。卖单量为：{num}".format(cointype=market,price=rate,num=quantity)
+                buy_info = "报警：币种为：{cointype}。卖单价为：{price}。卖单量为：{num}.盈利usdt数为:{profit_usdt}".format(cointype=market,price=rate,num=quantity,profit_usdt=profit_usdt)
                 self.dingding_warn(buy_info)
                 return res
         except BaseException as e:
@@ -68,7 +68,7 @@ class Message:
             self.dingding_warn(error_info+str(res))
             return res
         
-    def buy_limit_future_msg(self,market, quantity, price):
+    def buy_limit_future_msg(self,market, quantity, price,profit_usdt=None):
         '''
         合约做多单，带有钉钉消息
         :param market: 交易对
@@ -79,7 +79,7 @@ class Message:
         try:
             res = BinanceAPI(api_key,api_secret).limit_future_order('BUY', market, quantity, price)
             if res['orderId']:
-                buy_info = "报警：币种为：{cointype}。买入做多价格为：{price}。数量为：{num}".format(cointype=market,price=price,num=quantity)
+                buy_info = "报警：币种为：{cointype}。买入做多价格为：{price}。数量为：{num}。盈利USDT数为:{profit_usdt}".format(cointype=market,price=price,num=quantity,profit_usdt=profit_usdt)
                 self.dingding_warn(buy_info)
                 return res
         except BaseException as e:
