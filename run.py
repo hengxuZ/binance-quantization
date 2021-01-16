@@ -46,7 +46,7 @@ class Run_Main():
             elif grid_sell_price < cur_market_price:  # 是否满足卖出价
                 
                 if spot_step != 0: # 说明现货有仓位 则卖出 仓位-1
-                    profit_usdt = round((grid_sell_price - grid_sell_price / (1 + self.profitRatio/100 )) * runbet.get_future_quantity(False),2) # 计算 本次盈利u数(买卖价差*数量)
+                    profit_usdt = round((grid_sell_price / (1 + self.profitRatio/100 ) - grid_sell_price) * runbet.get_future_quantity(False),2) # 计算 本次盈利u数(买卖价差*数量)
                     spot_res = msg.sell_limit_msg(self.coinType,runbet.get_spot_quantity(False),grid_sell_price) # 期货卖出开多
                     if spot_res['orderId'] : runbet.set_spot_step(spot_step - 1) # 挂单成功，仓位 -1 
   
@@ -62,15 +62,15 @@ class Run_Main():
                 time.sleep(2) # 为了不被币安api请求次数限制
 
 
-# if __name__ == "__main__":
-#     instance = Run_Main()
-#     try:
-#         instance.loop_run()
-#     except Exception as e:
-#         error_info = "报警：币种{coin},服务停止".format(coin=instance.coinType)
-#         msg.dingding_warn(error_info)
+if __name__ == "__main__":
+     instance = Run_Main()
+     try:
+         instance.loop_run()
+     except Exception as e:
+         error_info = "报警：币种{coin},服务停止".format(coin=instance.coinType)
+         msg.dingding_warn(error_info)
 
 #调试看报错运行下面，正式运行用上面       
-if __name__ == "__main__":       
-    instance = Run_Main()    
-    instance.loop_run()
+#if __name__ == "__main__":       
+#    instance = Run_Main()    
+#    instance.loop_run()
