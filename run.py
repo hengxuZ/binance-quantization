@@ -47,7 +47,7 @@ class Run_Main():
                 
                 if spot_step != 0: # 说明现货有仓位 则卖出 仓位-1
                     profit_usdt = round((grid_sell_price / (1 + self.profitRatio/100 ) - grid_sell_price) * runbet.get_future_quantity(False),2) # 计算 本次盈利u数(买卖价差*数量)
-                    spot_res = msg.sell_limit_msg(self.coinType,runbet.get_spot_quantity(False),grid_sell_price) # 期货卖出开多
+                    spot_res = msg.sell_limit_msg(self.coinType,runbet.get_spot_quantity(False),grid_sell_price, profit_usdt) # 期货卖出开多
                     if spot_res['orderId'] : runbet.set_spot_step(spot_step - 1) # 挂单成功，仓位 -1 
   
                 future_res = msg.sell_limit_future_msg(self.coinType, future_quantity, grid_sell_price) #期货买入开空
