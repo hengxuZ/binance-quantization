@@ -6,6 +6,8 @@
 
 如果您没有使用过项目，请忽略掉上面第二版介绍
 
+---
+
 ### 介绍
 这是一款**单方向(多)现货网格交易策略**的量化项目。
 并且支持防踏空,行情上涨。网格价也自动提升。
@@ -96,8 +98,18 @@ wx号：findpanpan
 
 币圈有风险，入圈须谨慎。
 ### 注意事项
-- 由于交易所的api在大陆无法访问
-    所以以上操作必须在**科学上网**的基础上才能运行
+- 由于交易所的api在大陆无法访问（如果没有条件，可以使用api.binance.cc）
+    - 您需要选择修改binanceAPI.py文件
+
+```python
+# 修改为cc域名
+class BinanceAPI(object):
+    BASE_URL = "https://www.binance.cc/api/v1"
+    FUTURE_URL = "https://fapi.binance.cc"
+    BASE_URL_V3 = "https://api.binance.cc/api/v3"
+    PUBLIC_URL = "https://www.binance.cc/exchange/public/product"
+```
+
 - 如果您使用的交易所为币安，那么请保证账户里有足够的bnb
     - 手续费足够低
     - 确保购买的币种完整(如果没有bnb,比如购买1个eth,其中你只会得到0.999。其中0.001作为手续费支付了)
