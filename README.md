@@ -72,6 +72,26 @@ pip install request time json
 # python eth-run.py 这是带有钉钉通知的主文件(推荐使用钉钉模式启动👍)
 ```
 
+
+### 注意事项（一定要看）
+- 由于交易所的api在大陆无法访问（如果没有条件，可以使用api.binance.cc）
+    - 您需要选择修改binanceAPI.py文件
+
+```python
+# 修改为cc域名
+class BinanceAPI(object):
+    BASE_URL = "https://www.binance.cc/api/v1"
+    FUTURE_URL = "https://fapi.binance.cc"
+    BASE_URL_V3 = "https://api.binance.cc/api/v3"
+    PUBLIC_URL = "https://www.binance.cc/exchange/public/product"
+```
+
+- 如果您使用的交易所为币安，那么请保证账户里有足够的bnb
+    - 手续费足够低
+    - 确保购买的币种完整(如果没有bnb,比如购买1个eth,其中你只会得到0.999。其中0.001作为手续费支付了)
+- 第一版本现货账户保证有足够的U
+- 第二版本现货、合约账户保证有足够的U
+   
 ### 钉钉预警
 
 如果您想使用钉钉通知，那么你需要创建一个钉钉群，然后加入自定义机器人。最后将机器人的token粘贴到authorization文件中的dingding_token
@@ -93,30 +113,9 @@ wx号：findpanpan
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
+
 ### 免责申明
 本项目不构成投资建议，投资者应独立决策并自行承担风险
-
 币圈有风险，入圈须谨慎。
-### 注意事项
-- 由于交易所的api在大陆无法访问（如果没有条件，可以使用api.binance.cc）
-    - 您需要选择修改binanceAPI.py文件
-
-```python
-# 修改为cc域名
-class BinanceAPI(object):
-    BASE_URL = "https://www.binance.cc/api/v1"
-    FUTURE_URL = "https://fapi.binance.cc"
-    BASE_URL_V3 = "https://api.binance.cc/api/v3"
-    PUBLIC_URL = "https://www.binance.cc/exchange/public/product"
-```
-
-- 如果您使用的交易所为币安，那么请保证账户里有足够的bnb
-    - 手续费足够低
-    - 确保购买的币种完整(如果没有bnb,比如购买1个eth,其中你只会得到0.999。其中0.001作为手续费支付了)
-- 第一版本现货账户保证有足够的U
-- 第二版本现货、合约账户保证有足够的U
-   
-
-运行项目使用的是腾讯云的海外服务器
 
 > 🚫风险提示：防范以“虚拟货币”“区块链”名义进行非法集资的风险。
