@@ -3,8 +3,7 @@
 
 ### 🎉第二版本🎉 （现货做多 期货做空）
 点击➡ 查看[项目地址](https://github.com/hengxuZ/grid-futures-spot)
-
-如果您没有使用过项目，请忽略掉上面第二版介绍
+由于现在行情属于多头行情，如果使用第二版本会出现空方向被套，利润回吐的情况，所以暂时不公开了（实盘上因为使用了第二版，收益回撤了2w）。
 
 ---
 
@@ -39,7 +38,7 @@ api_secret='你的secret'
 dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （若不会申请，请加我个人微信）
 ```
 
-如果你还没有币安账号：[注册页面](https://www.binance.com/cn/register?ref=50178251)
+如果你还没有币安账号：[注册页面](https://www.binance.com/cn/register?ref=50178251)（通过链接注册，交易返现20%）
 
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
 
@@ -100,7 +99,7 @@ class BinanceAPI(object):
 #### 钉钉通知交易截图
 
 ![钉钉交易信息](https://s3.ax1x.com/2021/02/01/yZSi1x.jpg)
-#### 25日实战收益
+#### 60日实战收益
 ![收益图](https://s3.ax1x.com/2021/02/01/yVzytA.jpg)
 
 
