@@ -51,7 +51,7 @@ if __name__ == "__main__":
     try:
         instance.loop_run()
     except Exception as e:
-        error_info = "报警：币种{coin},服务停止".format(coin=instance.coinType)
+        error_info = "报警：币种{coin},服务停止.错误原因{info}".format(coin=instance.coinType,info=str(e))
         msg.dingding_warn(error_info)
 
 # 调试看报错运行下面，正式运行用上面       
