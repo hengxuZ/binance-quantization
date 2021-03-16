@@ -38,7 +38,7 @@ api_secret='你的secret'
 dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （若不会申请，请加我个人微信）
 ```
 
-如果你还没有币安账号：[注册页面](https://www.binance.com/cn/register?ref=50178251)（通过链接注册，交易返现20%）
+如果你还没有币安账号：[注册页面](https://www.binance.com/cn/register?ref=50178251)（通过链接注册，交易返现20%）[免翻墙地址](https://accounts.binance.cc/zh-CN/register?ref=50178251?ref=50178251)
 
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
 
