@@ -64,7 +64,8 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 ```
 3. 安装依赖包
 '''
-pip install request time json 
+pip install requests 
+pip install time
 '''
 4. 运行主文件
 ```
