@@ -71,17 +71,7 @@ pip install time
 
 
 ### 注意事项（一定要看）
-- 由于交易所的api在大陆无法访问（如果没有条件，可以使用api.binance.cc）
-    - 您需要选择修改binanceAPI.py文件
-
-```python
-# 修改为cc域名
-class BinanceAPI(object):
-    BASE_URL = "https://www.binance.cc/api/v1"
-    FUTURE_URL = "https://fapi.binance.cc"
-    BASE_URL_V3 = "https://api.binance.cc/api/v3"
-    PUBLIC_URL = "https://www.binance.cc/exchange/public/product"
-```
+- 由于交易所的api在大陆无法访问,请使用海外服务器才能够稳定运行
 
 - 如果您使用的交易所为币安，那么请保证账户里有足够的bnb
     - 手续费足够低
