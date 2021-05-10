@@ -28,7 +28,8 @@ api_secret='你的secret'
 dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （若不会申请，请加我个人微信）
 ```
 
-如果你还没有币安账号：[注册页面](https://www.binancezh.io/zh-CN/register?ref=OW7U53AB)（通过链接注册，交易返佣20%）
+如果你还没有币安账号：[注册页面](https://www.binancezh.io/zh-CN/register?ref=OW7U53AB)（通过链接注册，交易返佣20%）注册后，加我微信立马返现（一顿外卖）10元，如果有交易行为再返现一杯奶茶（20元）。进入核心群，不定时红包雨。
+
 [免翻墙地址](https://www.binancezh.cc/zh-CN/register?ref=OW7U53AB)
 
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
@@ -83,6 +84,8 @@ pip install requests
 #### 60日实战收益
 ![收益图](https://s3.ax1x.com/2021/02/01/yVzytA.jpg)
 
+如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
+![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
 
 ### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
 ![交流群](https://s3.ax1x.com/2021/01/08/snv3ss.jpg)
