@@ -1,43 +1,90 @@
-### 项目介绍
-> 背景：在量化运行的过程中，每当价格回落到满足买入价格时，🤖️ 会主动下一个买入订单。如果一直📉 那么就一直买一直买，直到账户没有💰 或 设置了停止补仓的策略。
-> 那么在这个价格下跌过程中，为什么不去利用下这个下跌的过程。而是坐以待毙等着上涨盈利？我们完全可以收集下跌过程中的势能，转化为我们需要的能量。
+### data.json配置文件详细解读
+> 使用json文件存储数据，目的是不用使用数据库，让门槛更低、更快捷执行策略
 
-> 结论：所以我选择了在下跌的过程开启了该交易对的做空，这样就能够很好的运用上每一次的波动率。
 
-### 使用介绍
+- next_buy_price
+假设 我要做UNI的网格策略，当前UNI/USDT=40
+next_buy_price意味着我买入UNI的价格，我设置为38，当uni跌到了38。就会触发买入指令（v2版本会判断是否最佳买入点 浮动买入，最终买入价低于38）
 
-1.调整需要执行的交易对的杠杆倍数为x1，这样才能和现货形成数量上的对冲效应(你也可以使用更高的倍数，但是你一定要清楚每一个仓位买入量是多少，现货的买入量又是多少)
-2. 修改配置data.json (位置在于./data/data.json)
+- grid_sell_price:代表卖出价。
+假设设置为42.当价格到达了42则触发卖出指令。v2版本会判断是否最佳买入点 浮动买入，最终买入价高于42）前提你当前账户拥有uni。如果没有uni，那么next_buy_price、grid_sell_price的值都会往上浮动，这样避免价格踏出网格区间
+
+- step：代表 当前 我买了几次UNI了。
+比方说uni=40，跌到了38触发第一次买入，step=1，grid_buy_price自动变化成了36。当价格达到36，再次触发买入，step=2。当价格回升满足卖出，那么step=1。
+
+- profit_ratio：代表卖出价格上升的比率
+假设profit_ratio设置为10，当grid_sell_price=40被触发后，grid_sell_price = 40 * 1.1 = 44
+
+- double_throw_ratio：代表买入价格下降的比率
+假设double_throw_ratio设置为10，当grid_buy_price=40被触发后，grid_sell_price = 40 * （100-10）*0.01 = 36
+
+- quantity：代表你要买入的量。
+假设quantity=[10]，当满足买入时，会买入10个uni。当价格继续下跌，当第二次满足买入时，又会买入10个uni。
+当数组只有一个值时：任何时候买卖的数量都为该值。
+假设quantity=[10,20,30]，当满足买入时，会买入10个uni。当价格继续下跌，当第二次满足买入时，又会买入20个uni。当第三次满足买入时，又会买入30个uni。当第四次满足买入时，会买入30个uni。当第n次满足买入时，会买入30个uni。卖出时，也会按照买入的量卖出。
+
+## 实战举例：
+data.json配置如下：
 ```
 {
     "runBet": {
-        "next_buy_price": 2.71,        <-- 现货买入价格，期货卖出价格
-        "grid_sell_price": 2.87,       <-- 现货卖出价格, 期货买入价格
-        "spot_step": 0,                <-- 现货当前持仓手数(你买了几手仓)
-        "future_step": 2               <-- 期货当前持仓手数(你开了几手仓)
+        "next_buy_price":36,      
+        "grid_sell_price": 44    
+        "step":0                  
     },
     "config": {
-        "profit_ratio": 3,             <-- 现货下次补仓比率，期货止盈比率   
-        "double_throw_ratio": 3,       <-- 现货止盈比率，期货下次补仓比率
-        "cointype": "EOSUSDT",
-        "spot_quantity": [
-            50                         <-- 现货买入量（可以自定义每手买入量，超出手数后，每手买入量均按照最后一位购买）
-        ],
-        "future_quantity": [
-            50                         <-- 期货买入量（可以自定义每手买入量，超出手数后，每手买入量均按照最后一位购买）
-        ]
+        "profit_ratio": 10,         
+        "double_throw_ratio": 10,   
+        "cointype": "UNIUSDT",   
+        "quantity": [10,20,30]        
     }
 }
-
-⬆️ 面配置还有很多可玩性，比如
-"config": {
-        "profit_ratio": 5,               
-        "double_throw_ratio": 10,
-        }
 ```
-表达的意思是：趋势向上的网格
-
-![如果看不到图，请到wx群获取](https://s3.ax1x.com/2021/01/15/s0kMtg.png)
-
-3.运行脚本
-python3 eos.py
+现在行情大跌，假设UNI跌到了36，触发了买入价格。data.json自动变成了以下配置：并且买入了10个UNI
+```
+{
+    "runBet": {
+        "next_buy_price":32.4,      
+        "grid_sell_price": 39.6    
+        "step":1                  
+    },
+    "config": {
+        "profit_ratio": 10,         
+        "double_throw_ratio": 10,   
+        "cointype": "UNIUSDT",   
+        "quantity": [10,20,30]        
+    }
+}
+```
+现在行情继续下跌，假设UNI跌到了32.4，触发了买入价格。data.json自动变成了以下配置：并且买入了20个UNI
+```
+{
+    "runBet": {
+        "next_buy_price":29.16,      
+        "grid_sell_price": 35.64    
+        "step":2                  
+    },
+    "config": {
+        "profit_ratio": 10,         
+        "double_throw_ratio": 10,   
+        "cointype": "UNIUSDT",   
+        "quantity": [10,20,30]        
+    }
+}
+```
+现在行情回升，假设UNI上到了35.64，触发了卖入价格。data.json自动变成了以下配置：并且卖入了20个UNI
+```
+{
+    "runBet": {
+        "next_buy_price":32.076,      
+        "grid_sell_price": 39.204    
+        "step":1                  
+    },
+    "config": {
+        "profit_ratio": 10,         
+        "double_throw_ratio": 10,   
+        "cointype": "UNIUSDT",   
+        "quantity": [10,20,30]        
+    }
+}
+```
