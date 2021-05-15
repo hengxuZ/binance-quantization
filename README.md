@@ -84,8 +84,8 @@ pip install requests
 #### 钉钉通知交易截图
 
 ![钉钉交易信息](https://s3.ax1x.com/2021/02/01/yZSi1x.jpg)
-#### 60日实战收益
-![收益图](https://s3.ax1x.com/2021/02/01/yVzytA.jpg)
+#### 1月到5月实战收益
+![收益图](https://z3.ax1x.com/2021/05/15/gyLTB9.jpg)
 
 如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
 ![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
@@ -99,7 +99,7 @@ wx号：findpanpan
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
-重大喜讯第二版本它来了！！真正的网格套利！！
+重大喜讯第三版本它来了！！真正的网格多空！！
 
 ### 🎉第三版本🎉 （双向网格、多空、趋势开单）
 点击➡ 查看[项目地址](https://gitee.com/XingFuCunDeMaNong/contract-two-way-grid-trends)
