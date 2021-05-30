@@ -1,6 +1,8 @@
 # 数字货币量化交易-网格策略
 
-推荐使用 -> 第二版 [趋势网格现货](https://github.com/hengxuZ/spot-trend-grid)
+推荐使用 -> 
+v2版 [趋势做多网格](https://github.com/hengxuZ/spot-trend-grid)
+v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 ---
 
 ### 介绍
