@@ -2,6 +2,7 @@
 
 推荐使用 -> 
 v2版 [趋势做多网格](https://github.com/hengxuZ/spot-trend-grid)
+v3版 [双向合约网格](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
 v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 ---
 
@@ -93,10 +94,11 @@ pip install requests
 ![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
 
 ### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
-![交流群](https://s3.ax1x.com/2021/01/08/snv3ss.jpg)
-![wechat-QRcode](https://s3.ax1x.com/2020/11/14/DPSYss.jpg)
+![qq交流群](https://img02.sogoucdn.com/app/a/100520146/D179E91E279E65E3DD642C24D482D23D)
+#### qq群号：1143200770
+
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
-wx号：findpanpan
+![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
 麻烦备注来自github
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
@@ -104,8 +106,7 @@ wx号：findpanpan
 重大喜讯第三版本它来了！！真正的网格多空！！
 
 ### 🎉第三版本🎉 （双向网格、多空、趋势开单）
-点击➡ 查看[项目地址](https://gitee.com/XingFuCunDeMaNong/contract-two-way-grid-trends)
-由于现在行情属于多头行情，如果使用第三版本会出现空方向被套，利润回吐的情况。（实盘上因为使用了第三版，收益回撤了2w）。
+点击➡ 查看[项目地址](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
 
 **群友基于本项目的开源项目**
 
