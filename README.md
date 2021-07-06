@@ -1,8 +1,10 @@
 # 数字货币量化交易-网格策略
 
 推荐使用 -> 
-v2版 [趋势做多网格](https://github.com/hengxuZ/spot-trend-grid)
-v3版 [双向合约网格](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
+v2版 [现货做多网格](https://github.com/hengxuZ/spot-trend-grid)
+
+v3版 [双向多空合约网格](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
+
 v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 ---
 
@@ -108,9 +110,6 @@ pip install requests
 ### 🎉第三版本🎉 （双向网格、多空、趋势开单）
 点击➡ 查看[项目地址](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
 
-**群友基于本项目的开源项目**
-
-→[项目地址](https://github.com/grassroadsZ/spot_grid_web.git)
 
 ### 免责申明
 本项目不构成投资建议，投资者应独立决策并自行承担风险
