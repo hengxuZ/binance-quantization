@@ -97,13 +97,20 @@ pip install requests
 如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
 ![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
 
-### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
-![qq交流群](https://img02.sogoucdn.com/app/a/100520146/D179E91E279E65E3DD642C24D482D23D)
-#### qq群号：1143200770
+
 
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
+
+![拉vx群助手](https://z3.ax1x.com/2021/07/09/RxkHW4.jpg) 
+### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
+#### qq群号：1143200770
+![qq群](https://z3.ax1x.com/2021/07/09/RxAllj.jpg)
 麻烦备注来自github
+### 钉钉设置教程
+![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
+
+
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
