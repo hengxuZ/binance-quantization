@@ -38,7 +38,7 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 ```
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
 
-如果你还没有币安账号： [注册页面](https://www.binancezh.io/zh-CN/register?ref=OW7U53AB)[免翻墙地址](https://www.binancezh.cc/zh-CN/register?ref=OW7U53AB)交易返佣20% 注册立刻返现10元，充值交易再返现10元。
+如果你还没有币安账号： [注册页面](https://www.binancezh.top/zh-CN/register?ref=OW7U53AB)[免翻墙地址](https://www.binancezh.cc/zh-CN/register?ref=OW7U53AB)交易返佣20% 注册立刻返现10元，充值交易再返现10元。
 
 或者可以注册火币账号：[注册页面](https://www.huobi.ms/zh-cn/topic/double-reward/?invite_code=w2732223)交易返佣15% 注册立刻返现5元，充值并且交易再返现10元
 
