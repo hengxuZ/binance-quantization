@@ -102,8 +102,6 @@ pip install requests
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
 
-![拉vx群助手](https://z3.ax1x.com/2021/07/09/RxkHW4.jpg) 
-### 私人微信：欢迎志同道合的朋友一同探讨，一起进步。
 #### qq群号：1143200770
 ![qq群](https://z3.ax1x.com/2021/07/09/RxAllj.jpg)
 麻烦备注来自github
