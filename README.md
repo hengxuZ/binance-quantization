@@ -7,7 +7,8 @@ v3版 [双向多空合约网格](https://gitee.com/XingFuCunDeMaNong/bothway-gri
 
 v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
-[链上地址监控通知](https://github.com/hengxuZ/scan-monitor)
+➡️ [链上地址监控通知系统](https://github.com/hengxuZ/scan-monitor)
+
 ---
 
 ### 介绍
