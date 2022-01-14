@@ -98,10 +98,14 @@ pip install requests
 如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
 ![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
 
-
+服务器购买链接🔗:
+【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元 https://curl.qcloud.com/ljuS6cnp
 
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
+
+## [网格量化教程](https://youtu.be/eJnx3E1J0I0)
+私人微信号：zxmeng1999
 
 #### qq群号：1143200770
 ![qq群](https://z3.ax1x.com/2021/07/09/RxAllj.jpg)
