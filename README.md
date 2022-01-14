@@ -9,7 +9,7 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ➡️ [链上地址监控通知系统](https://github.com/hengxuZ/scan-monitor)
 
-##➡️➡️ [网格量化教程](https://youtu.be/eJnx3E1J0I0)
+##➡️➡️ [V2版本项目视频教程](https://youtu.be/eJnx3E1J0I0) ⬅️ ⬅️
 ---
 
 ### 介绍
@@ -40,9 +40,12 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 ```
 申请api_key地址: [币安API管理页面](https://www.binance.com/cn/usercenter/settings/api-management)
 
-如果你还没有币安账号： [注册页面](https://www.binancezh.top/zh-CN/register?ref=OW7U53AB)[免翻墙地址](https://www.binancezh.cc/zh-CN/register?ref=OW7U53AB)交易返佣20% 注册立刻返现10元，充值交易再返现10元。
+如果你还没有币安账号： [注册页面](https://www.binancezh.top/zh-CN/register?ref=OW7U53AB)[免翻墙地址](https://www.binancezh.cc/zh-CN/register?ref=OW7U53AB)交易返佣20% 
 
-或者可以注册火币账号：[注册页面](https://www.huobi.ms/zh-cn/topic/double-reward/?invite_code=w2732223)交易返佣15% 注册立刻返现5元，充值并且交易再返现10元
+或者可以注册火币账号：[注册页面](https://www.huobi.ms/zh-cn/topic/double-reward/?invite_code=w2732223)交易返佣15% 
+
+服务器购买链接🔗:
+【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元 https://curl.qcloud.com/ljuS6cnp
 
 交易返佣计算公式：交易金额1W元 * 手续费比率0.1% * 0.02 = 2元（交易1w节约2元）
 
@@ -99,8 +102,7 @@ pip install requests
 如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
 ![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
 
-服务器购买链接🔗:
-【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元 https://curl.qcloud.com/ljuS6cnp
+
 
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
