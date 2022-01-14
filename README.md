@@ -9,6 +9,7 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ➡️ [链上地址监控通知系统](https://github.com/hengxuZ/scan-monitor)
 
+##➡️➡️ [网格量化教程](https://youtu.be/eJnx3E1J0I0)
 ---
 
 ### 介绍
@@ -104,7 +105,7 @@ pip install requests
 ![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
 
-## [网格量化教程](https://youtu.be/eJnx3E1J0I0)
+
 私人微信号：zxmeng1999
 
 #### qq群号：1143200770
