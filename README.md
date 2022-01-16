@@ -44,8 +44,8 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 
 或者可以注册火币账号：[注册页面](https://www.huobi.ms/zh-cn/topic/double-reward/?invite_code=w2732223)交易返佣15% 
 
-服务器购买链接🔗:
-【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元 https://curl.qcloud.com/ljuS6cnp
+
+[【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元🔗](https://curl.qcloud.com/ljuS6cnp)
 [okex 正常otc 交易手续费85折](https://www.ouyi.fans/join/1900523?src=from:android-share)
 
 [抹茶 不用kyc 正常交易 交易9折]：https://www.mexc.com/zh-CN/register?inviteCode=78117345
