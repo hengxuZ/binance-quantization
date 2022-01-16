@@ -46,8 +46,16 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 
 服务器购买链接🔗:
 【腾讯云】热门云产品首单特惠秒杀，1核2G云服务器首年38元 https://curl.qcloud.com/ljuS6cnp
+[okex 正常otc 交易手续费85折](https://www.ouyi.fans/join/1900523?src=from:android-share)
 
-交易返佣计算公式：交易金额1W元 * 手续费比率0.1% * 0.02 = 2元（交易1w节约2元）
+[抹茶 不用kyc 正常交易 交易9折]：https://www.mexc.com/zh-CN/register?inviteCode=78117345
+
+区块链、defi、gamefi、nft、智能合约视频教程 ⬇️ ⬇️
+[bilibili](https://space.bilibili.com/378065515?spm_id_from=333.1007.0.0)
+[youtube](https://www.youtube.com/channel/UCnj5EFX8a0RS-dCP7bQ56CA)
+
+
+
 
 
 2. 修改data/data.json配置文件  （参数详细解读->[一定要看](https://github.com/hengxuZ/binance-quantization/blob/master/dev-ReadMe.md)）
