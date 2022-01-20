@@ -115,7 +115,7 @@ pip install requests
 
 
 
-![币圈快讯爬取群](https://s3.ax1x.com/2021/02/01/yZSU4s.jpg)
+![打赏](https://s4.ax1x.com/2022/01/20/7cRSvd.png)
 ![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
 
 
