@@ -10,6 +10,8 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 ➡️ [链上地址监控通知系统](https://github.com/hengxuZ/scan-monitor)
 
 ##➡️➡️ [V2版本项目视频教程](https://youtu.be/eJnx3E1J0I0) ⬅️ ⬅️
+
+作者 🔗：https://linktr.ee/erwaplayblockchain（更多内容）
 ---
 
 ### 介绍
