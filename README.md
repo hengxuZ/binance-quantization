@@ -11,7 +11,7 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ##➡️➡️ [V2版本项目视频教程](https://youtu.be/eJnx3E1J0I0) ⬅️ ⬅️
 
-作者 🔗：https://linktr.ee/erwaplayblockchain（更多内容）
+作者 🔗：https://linktr.ee/erwaplayblockchain （更多内容）
 ---
 
 ### 介绍
