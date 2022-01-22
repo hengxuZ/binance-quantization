@@ -3,20 +3,18 @@
 推荐使用 -> 
 v2版 [现货做多网格](https://github.com/hengxuZ/spot-trend-grid)
 
-v3版 [双向多空合约网格](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
-
 v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ➡️ [链上地址监控通知系统](https://github.com/hengxuZ/scan-monitor)
 
-##➡️➡️ [V2版本项目视频教程](https://youtu.be/eJnx3E1J0I0) ⬅️ ⬅️
-
 作者 🔗：https://linktr.ee/erwaplayblockchain 
+
 视频教程⬆️ 尽在YouTube  discord群链接🔗 ⬆️⬆️
 
 欢迎👏加入discord社群目标：打造一个频道，监控全网。别人知道的消息，你也能够第一时间发现。
 前期免费🆓，后期付费进群。收入的费用将成立DAO基金。基金用于购买白名单，nft，奖励对社区有贡献的小伙伴！
-![discord群](https://s4.ax1x.com/2022/01/22/7fpMTA.png)
+
+![discord群](https://s4.ax1x.com/2022/01/22/7fCeVH.png)
 
 ---
 
