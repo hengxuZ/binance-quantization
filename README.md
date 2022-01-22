@@ -11,7 +11,12 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ##➡️➡️ [V2版本项目视频教程](https://youtu.be/eJnx3E1J0I0) ⬅️ ⬅️
 
-作者 🔗：https://linktr.ee/erwaplayblockchain （更多内容）
+作者 🔗：https://linktr.ee/erwaplayblockchain 
+视频教程⬆️ 尽在YouTube  discord群链接🔗 ⬆️⬆️
+
+欢迎👏加入discord社群目标：打造一个频道，监控全网。别人知道的消息，你也能够第一时间发现。
+前期免费🆓，后期付费进群。收入的费用将成立DAO基金。基金用于购买白名单，nft，奖励对社区有贡献的小伙伴！
+![discord群](https://s4.ax1x.com/2022/01/22/7fpMTA.png)
 
 ---
 
@@ -53,8 +58,7 @@ dingding_token = '申请钉钉群助手的token'   # 强烈建议您使用 （�
 
 [抹茶 不用kyc 正常交易 交易9折]：https://www.mexc.com/zh-CN/register?inviteCode=78117345
 
-区块链、defi、gamefi、nft、智能合约视频教程 ⬇️ ⬇️
-[bilibili](https://space.bilibili.com/378065515?spm_id_from=333.1007.0.0)
+区块链、defi、gamefi、nft、智能合约视频教程 ⬇️ 
 [youtube](https://www.youtube.com/channel/UCnj5EFX8a0RS-dCP7bQ56CA)
 
 
@@ -104,26 +108,13 @@ pip install requests
 如果您想使用钉钉通知，那么你需要创建一个钉钉群，然后加入自定义机器人。最后将机器人的token粘贴到authorization文件中的dingding_token
 关键词输入：报警
 
-#### 钉钉通知交易截图
-
-![钉钉交易信息](https://s3.ax1x.com/2021/02/01/yZSi1x.jpg)
 #### 1月到5月实战收益
 ![收益图](https://z3.ax1x.com/2021/05/15/gyLTB9.jpg)
 
-如果您不想那么麻烦，又是python、linux 服务器。可以使用下面链接注册派网。体验网格交易
-![派网注册](https://www.pionex.cc/zh-CN/sign/ref/gP7byIO9)（通过该链接注册的用户，加我立马返现5元）
-
-
-
-![打赏](https://s4.ax1x.com/2022/01/20/7cRSvd.png)
-![钉钉群二维码](https://i0.hdslb.com/bfs/album/4f50bfd7f1fddaa7c340bc06d7ce078404670fb2.jpg)
 
 
 私人微信号：zxmeng1999
 
-#### qq群号：1143200770
-![qq群](https://z3.ax1x.com/2021/07/09/RxAllj.jpg)
-麻烦备注来自github
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
@@ -131,10 +122,7 @@ pip install requests
 ### 钉钉设置教程
 ![钉钉设置教程](https://s3.ax1x.com/2021/01/08/suMVIK.png)
 
-重大喜讯第三版本它来了！！真正的网格多空！！
-
-### 🎉第三版本🎉 （双向网格、多空、趋势开单）
-点击➡ 查看[项目地址](https://gitee.com/XingFuCunDeMaNong/bothway-grid)
+![打赏](https://s4.ax1x.com/2022/01/20/7cRSvd.png)
 
 
 ### 免责申明
