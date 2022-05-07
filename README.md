@@ -3,7 +3,7 @@
  
 那么你需要 时间+充足的精力+一点点💰
  
-准备好了吗？ 那请进入下方的表格（开始你的区块链任务的之旅）
+准备好了吗？ 那就进入下方的表格吧（开始你的区块链任务的之旅）
 https://docs.google.com/spreadsheets/d/1szV11my3F11HG2kVUt1Bo2a4P7u19fWr4U8mqYzMP_U/edit?usp=sharing
 
 ---
