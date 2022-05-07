@@ -1,18 +1,12 @@
-推荐使用 -> 
-v2版 [现货做多网格](https://github.com/hengxuZ/spot-trend-grid)
 
-v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
+如果您想和我一样通过币圈赚到第一桶金？
+ 
+那么你需要 时间+充足的精力+一点点💰
+ 
+准备好了吗？ 那请进入下方的表格（开始你的区块链任务的之旅）
+https://docs.google.com/spreadsheets/d/1szV11my3F11HG2kVUt1Bo2a4P7u19fWr4U8mqYzMP_U/edit?usp=sharing
 
-
-
-> 如果您想和我一样通过币圈赚到第一桶金？
-> 
-> 那么你需要 时间+充足的精力+一点点💰
-> 
-> 准备好了吗？ 那请进入下方的表格（开始你的区块链任务的之旅）
-> https://docs.google.com/spreadsheets/d/1szV11my3F11HG2kVUt1Bo2a4P7u19fWr4U8mqYzMP_U/edit?usp=sharing
-
-
+---
 
 作者 🔗：https://linktr.ee/erwaplayblockchain 
 
@@ -24,6 +18,11 @@ v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 ![discord群](https://s4.ax1x.com/2022/01/22/7fCeVH.png)
 
 ---
+
+推荐使用 -> 
+v2版 [现货做多网格](https://github.com/hengxuZ/spot-trend-grid)
+
+v4版 [趋势做空网格](https://github.com/hengxuZ/future-short-grid)
 
 ### 介绍
 这是一款**单方向(多)现货网格交易策略**的量化项目。
