@@ -1,11 +1,9 @@
 
-如果您想和我一样通过币圈赚到第一桶金？
+量化使我的本金稳定，nft让我收入爆炸💥
  
-那么你需要 时间+充足的精力+一点点💰
- 
-准备好了吗？ 那就进入下方的表格吧（开始你的区块链任务的之旅）
-https://docs.google.com/spreadsheets/d/1szV11my3F11HG2kVUt1Bo2a4P7u19fWr4U8mqYzMP_U/edit?usp=sharing
-
+转行做NFT了。如果想要获取alpha收益。
+不收费，不喊单。只为寻找志同道合的兄弟。
+➕ zxmeng1999 我们一起探索nft的暴力
 ---
 
 作者 🔗：https://linktr.ee/erwaplayblockchain 
