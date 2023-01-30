@@ -3,7 +3,7 @@
  
 转行做NFT了。如果想要获取alpha收益。
 不收费，不喊单。只为寻找志同道合的兄弟。
-➕ zxmeng1999 我们一起探索nft的暴力
+➕ erwaNFT 我们一起探索nft的暴力美学
 ---
 
 作者 🔗：https://linktr.ee/erwaplayblockchain 
